@@ -42,16 +42,23 @@ O que são os React Components?
 
 
 ### 4 - CRIAR UM PROJETO REACT COM CREATE REACT APP
+- React.js -> https://pt-br.reactjs.org/
+
+Comando para a criação do projeto.
+### npx create-react-app my_app
 
 
+### Solucionando Erros
+Erro:
+- "You are running `create-react-app` 5.0.0, which is behind the latest release (5.0.1)."
 
+- npm unistall -g create-react-app
+- yarn global remove create-react-app
+- npx clear-npx-cache
+- npm install -g create-react-app
 
-
-
-
-
-
-
+Criando o projeto
+### npx create-react-app webapp-001
 
 
 
