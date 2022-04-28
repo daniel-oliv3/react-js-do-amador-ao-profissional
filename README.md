@@ -13,7 +13,7 @@ Quais os requisitos necessarios?
 - Node.js  -> https://nodejs.org/en/
 
 
-### 2 O QUE É O REACT E HTML VS REACT.
+### 2 - O QUE É O REACT E HTML VS REACT.
 O que é o React?
 - React(ou Reactjs) é uma biblioteca de Javascript
 - Focada em desenvolvimento Front-end
