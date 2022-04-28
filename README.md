@@ -26,14 +26,22 @@ Como funciona com o React(Javascript)?
 - O javascript permite manipular o DOM (Document Object Model)
 - O react atualiza partes da página sem a necessidade de recarregamento
 - O react é uma biblioteca que funciona do lado do cliente
+- Permite a construção moderna de interfaces de utilizador (UI)
+
+
+### 3 - COMO FUNCIONA O REACT REACT COMPONENTS.
+O que são os React Components?
+
+- Geralmente, componentes React são como funções JavaScript. 
+- Eles aceitam entradas como propriedades (chamadas “props”) 
+- e retornam novos elementos React, os chamados JSX.
+- Os componentes permitem que a UI seja dividida em partes 
+- independentes e reutilizáveis, ou seja, trata cada parte da aplicação como um
+- bloco isolado, livre de outras dependências externas.
 
 
 
-
-
-
-
-
+### 4 - CRIAR UM PROJETO REACT COM CREATE REACT APP
 
 
 
