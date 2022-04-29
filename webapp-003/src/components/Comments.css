@@ -1,27 +1,28 @@
 .comments {
     min-width: 500px;
     padding: 20px;
-    margin: 5px;
+    margin: 10px;
     border: 1px solid black;
     border-radius: 10px;
     background-color: white;
     color: black;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }
 
 .title {
     font-size: 1.5rem;
-    color: blue;
+    color: rgb(36, 36, 84);
     margin-bottom: 20px;
 }
 
 .texto {
-    font-size: 1.5rem;
-    color: green;
+    font-size: 1em;
+    color: gray;
     margin-bottom: 20px;
 }
 
 .autor {
-    font-size: 1em;
-    color: red;
-    margin-bottom: 20px;
+    align-items: right;
+    font-size: .8em;
+    color: black;
 }
