@@ -4,7 +4,12 @@
 }
 
 body {
-  background-color: black;
-  color: white;
+  background-color: rgb(238, 240, 136);
+  color: black;
   font-family: 'Roboto', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
 }

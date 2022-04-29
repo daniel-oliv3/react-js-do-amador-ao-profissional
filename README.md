@@ -104,6 +104,8 @@ Rodar o Projeto React.
 Ou
 ### npm start
 
+- alteração no projeto. clear...
+
 
 
 

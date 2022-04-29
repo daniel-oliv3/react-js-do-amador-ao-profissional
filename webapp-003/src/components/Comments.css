@@ -1,0 +1,27 @@
+.comments {
+    min-width: 500px;
+    padding: 20px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: blue;
+    margin-bottom: 20px;
+}
+
+.texto {
+    font-size: 1.5rem;
+    color: green;
+    margin-bottom: 20px;
+}
+
+.autor {
+    font-size: 1em;
+    color: red;
+    margin-bottom: 20px;
+}
