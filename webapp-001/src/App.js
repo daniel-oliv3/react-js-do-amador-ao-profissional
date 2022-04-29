@@ -4,7 +4,7 @@ import React from "react";
 function App(){
     return (
         <div>
-            <h1>Olá Sapup3 Como Vai ?</h1>
+            <h1>Sapup3</h1>
         </div>
     );
 };

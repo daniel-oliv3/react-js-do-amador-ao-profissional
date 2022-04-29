@@ -79,11 +79,19 @@ Ou
 - webapp-001
 
 ### 7 - MAIS DESENVOLVIMENTOS NO NOSSO PROJETO.
+- webapp-001 update
 
 
+### 8 - COMPONENTES DENTRO DE COMPONENTES.
+- criando o projeto webapp-002
 
+Criando o Projeto.
+### npx create-react-app webapp-002
 
-
+Rodar o Projeto React.
+### yarn start
+Ou
+### npm start
 
 
 
