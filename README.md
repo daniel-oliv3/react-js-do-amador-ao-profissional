@@ -93,6 +93,17 @@ Ou
 ### npm start
 
 
+### 9 - REPRODUÇÃO DO EXERCÍCIO DA AULA 2.
+- criando o projeto webapp-003
+
+Criando o Projeto.
+### npx create-react-app webapp-003
+
+Rodar o Projeto React.
+### yarn start
+Ou
+### npm start
+
 
 
 
