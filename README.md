@@ -122,8 +122,8 @@ Ou
 
 - alteração no projeto. clear...
 
-### Inserindo codigo no settings.json, na aba do VSCODE. 
-- "arquivos/preferencia/configurações/abrir-confg-json"
+### Inserindo codigo do Git Bash no settings.json, na aba do VSCODE. 
+- "arquivos/preferencias/configurações/abrir-confg-json"
 codigo para o terminal Git Bash.
 - "terminal.integrated.defaultProfile.windows": "Git Bash"
 
