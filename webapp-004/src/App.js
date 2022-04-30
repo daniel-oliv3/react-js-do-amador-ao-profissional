@@ -1,11 +1,13 @@
 import React from "react";
-
+//importação do componente
+import ComponenteUm from "./Components/ComponenteUm";
 
 //Function components, jsx
 function App(){
     return (
         <>
-            <p>Aplicação React</p>
+            <ComponenteUm/>
+            <ComponenteUm/>
         </>
     );
 };
