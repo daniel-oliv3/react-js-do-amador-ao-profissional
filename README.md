@@ -124,7 +124,7 @@ Ou
 
 ### Inserindo codigo do Git Bash no settings.json, na aba do VSCODE. 
 - "arquivos/preferencias/configurações/abrir-confg-json"
-codigo para o terminal Git Bash.
+- codigo para o terminal Git Bash.
 - "terminal.integrated.defaultProfile.windows": "Git Bash"
 
 
