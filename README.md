@@ -109,6 +109,19 @@ Ou
 
 ### 10 - INTRODUÇÃO A REACT PROPS.
 
+### 11 - REORGANIZAÇÃO DO PROJETO E PASCALCASE.
+- criando o projeto webapp-004
+
+Criando o Projeto.
+### npx create-react-app webapp-004
+
+Rodar o Projeto React.
+### yarn start
+Ou
+### npm start
+
+- alteração no projeto. clear...
+
 
 
 
