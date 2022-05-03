@@ -128,7 +128,7 @@ Ou
 - "terminal.integrated.defaultProfile.windows": "Git Bash"
 
 
-
+### 12 - COMPONENTES NA DOM E ARROW FUNCTIONS.
 
 
 
