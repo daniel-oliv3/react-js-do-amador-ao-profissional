@@ -6,7 +6,7 @@ const ComponenteSeis = (props) => {
 
     function cliente(){
         return clientes.map(cliente => {
-            return <li>Nome: {cliente.nome} | Email: {cliente.email}</li>
+            return <li key={cliente.id_cliente}>Nome: {cliente.nome} | Email: {cliente.email}</li>
         });
     }
 
