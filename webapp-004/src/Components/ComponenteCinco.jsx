@@ -5,7 +5,7 @@ import React from "react";
 const ComponenteCinco = (props) => {
     return (
         <>
-            <p>Texto {props.texto}</p>
+            <p>Texto: - 5 {props.texto}</p>
         </>
     );
 }
