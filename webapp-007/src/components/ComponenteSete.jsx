@@ -8,12 +8,12 @@ export default function(props){
             {
                 props.valor ?
                     <div>
-                        <h1>Análise do valor</h1>
+                        <h3>Análise do valor</h3>
                         <p>Verdadeiro</p>
                     </div>
                 :
                     <div>
-                        <h1>Análise do valor</h1>
+                        <h3>Análise do valor</h3>
                         <p>Falso</p>
                     </div>    
             }
