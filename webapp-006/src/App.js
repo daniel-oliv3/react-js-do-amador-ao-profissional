@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+//importação do componente, aula 15
+import ComponenteUm from "./components/ComponenteUm";
+import ComponenteDois from "./components/ComponenteDois";
+import ComponenteTres from "./components/ComponenteTres";
+import ComponenteQuatro from "./components/ComponenteQuatro";
+import ComponenteSeis from "./components/ComponenteSeis";
+
+
+
+
+//Function components, jsx
+function App(){
+    return (
+        <div>
+            <ComponenteSeis titulo="Componente 6"/>
+            <ComponenteUm titulo="1"/>
+            <ComponenteDois titulo="2"/>
+            <ComponenteTres titulo="3"/>
+            <ComponenteQuatro titulo="4"/>
+        </div>
+    );
+};
+
 
 export default App;
