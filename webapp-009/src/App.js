@@ -17,7 +17,7 @@ import ComponenteNove from "./components/ComponenteNove";
 function App(){
     return (
         <div>
-            <ComponenteNove titulo="Componente Nove"/>
+            <ComponenteNove titulo="Componente Nove" valor="Sapup3"/>
             <ComponenteOito titulo="Comp 8" valor={10} valor="Sapup3"/> 
             <ComponenteSete titulo="Comp 7" valor={1}/> 
             <ComponenteSeis titulo="Componente 6"/>
