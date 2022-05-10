@@ -9,6 +9,11 @@ const dados_clientes = [
     {id_cliente: 8, nome: "Mario", email: "mario.souza@gmail.com"},
     {id_cliente: 9, nome: "Nivea", email: "niveanissy@gmail.com"},
     {id_cliente: 10, nome: "Athos", email: "athos.souza@gmail.com"},
+    {id_cliente: 11, nome: "Danilo", email: "danilo.souza@gmail.com"},
+    {id_cliente: 12, nome: "Maria", email: "maria.alice@gmail.com"},
+    {id_cliente: 13, nome: "Bruno", email: "bruno.souza@gmail.com"},
+    {id_cliente: 14, nome: "Marcio", email: "marcio.souza@gmail.com"},
+    {id_cliente: 15, nome: "Alice", email: "alice.souza@gmail.com"},
 ]
 
 export default dados_clientes;

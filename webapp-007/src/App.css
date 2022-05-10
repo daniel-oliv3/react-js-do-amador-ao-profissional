@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.componente {
+  background-color: rgb(30, 30, 30);
+  margin: 10px;
+  padding: 20px;
+}
+
+/*p.titulo{
+  background-color: rgb(76, 76, 150);
+}*/
