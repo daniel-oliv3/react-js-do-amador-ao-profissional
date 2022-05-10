@@ -9,6 +9,7 @@ import ComponenteQuatro from "./components/ComponenteQuatro";
 import ComponenteSeis from "./components/ComponenteSeis";
 import ComponenteSete from "./components/ComponenteSete";
 import ComponenteOito from "./components/ComponenteOito";
+import ComponenteNove from "./components/ComponenteNove";
 
 
 
@@ -16,6 +17,7 @@ import ComponenteOito from "./components/ComponenteOito";
 function App(){
     return (
         <div>
+            <ComponenteNove titulo="Componente Nove"/>
             <ComponenteOito titulo="Comp 8" valor={10} valor="Sapup3"/> 
             <ComponenteSete titulo="Comp 7" valor={1}/> 
             <ComponenteSeis titulo="Componente 6"/>
