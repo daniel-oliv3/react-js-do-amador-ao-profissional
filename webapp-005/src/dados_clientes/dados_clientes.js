@@ -5,3 +5,5 @@ const dados_clientes = [
     {id_cliente: 4, nome: "Felipe", email: "felipe.alexandre@gmail.com"},
     {id_cliente: 5, nome: "Mayra", email: "mayra.da.silva.sauro@gmail.com"},
 ]
+
+export default dados_clientes;

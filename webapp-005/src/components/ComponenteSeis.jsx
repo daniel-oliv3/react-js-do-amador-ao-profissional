@@ -1,15 +1,25 @@
 import React from "react";
-
+import clientes from "../dados_clientes/dados_clientes";
 
 //Function components, jsx
-function Components(){
+const ComponenteSeis = (props) => {
+
+    function cliente(){
+        return clientes.map(cliente => {
+            return <li>Nome: {cliente.nome} | Email: {cliente.email}</li>
+        });
+    }
+
     return (
         <div className="componente">
-            <h1>Título: Componente</h1>
-            <p>Componente</p>
+           <p className="titulo">Título: {props.titulo}</p>
+
+           <ul>
+               {cliente()}
+           </ul>
         </div>
     );
 };
 
 
-export default Components;
+export default ComponenteSeis;

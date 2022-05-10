@@ -9,7 +9,7 @@ const ComponenteQuatro = (props) => {
             <p>Título: {props.titulo}</p>
             <ComponenteCinco texto="propriedades do componente" />
             <ComponenteCinco />
-            <ComponenteCinco texto="propriedades do componente 2" />
+            <ComponenteCinco texto="propriedades do componente Cinco" />
         </div>
     );
 }
