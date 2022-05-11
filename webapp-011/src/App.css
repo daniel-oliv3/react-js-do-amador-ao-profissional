@@ -16,3 +16,13 @@ body {
   margin: 10px;
   padding: 20px;
 }
+
+p.titulo {
+  background: rgba(37, 193, 214, 0.697);;
+  margin: 4px;
+  padding: 4px;
+}
+
+h1 {
+  color: rgba(128, 214, 37, 0.697);
+}
