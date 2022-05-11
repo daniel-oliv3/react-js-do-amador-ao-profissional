@@ -6,7 +6,7 @@ function ComponenteFilho(props){
         <div className="componente">
             <p className="titulo">Título: {props.titulo}</p>
             {/*<p>Filho</p>*/}
-            <p>Cargo: {props.cargo} : {props.children}</p>
+            <p>Cargo: {props.cargo} - {props.children}</p>
 
         </div>
     )

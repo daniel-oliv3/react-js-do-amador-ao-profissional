@@ -7,16 +7,16 @@ function ComponentePai(props){
         <div className="componente">
             <p className="titulo">Título: {props.titulo}</p>
             <p>Pai</p>
-            <ComponenteFilho titulo="Componente Filho" cargo="administrador">
+            <ComponenteFilho titulo="Componente Filho" cargo="Web Developer">
                 Daniel Oliveira
             </ComponenteFilho>
 
-            <ComponenteFilho titulo="Componente Filho" cargo="administrador">
-                Daniel Oliveira
+            <ComponenteFilho titulo="Componente Filho" cargo="Secretária">
+                Priscila Andrade
             </ComponenteFilho>
 
-            <ComponenteFilho titulo="Componente Filho" cargo="administrador">
-                Daniel Oliveira
+            <ComponenteFilho titulo="Componente Filho" cargo="Tec-Informática">
+                Yusuke Urameshi
             </ComponenteFilho>
         </div>
     )

@@ -15,6 +15,8 @@ body {
   background-color: rgb(30, 30, 30);
   margin: 10px;
   padding: 20px;
+  border: 1px solid rgb(1, 51, 87);
+  border-radius: 5px;
 }
 
 p.titulo {
