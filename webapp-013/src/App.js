@@ -1,25 +1,40 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+//importação do componente, aula 22
+import ComponenteUm from "./components/ComponenteUm";
+import ComponenteDois from "./components/ComponenteDois";
+import ComponenteTres from "./components/ComponenteTres";
+import ComponenteQuatro from "./components/ComponenteQuatro";
+import ComponenteSeis from "./components/ComponenteSeis";
+import ComponenteSete from "./components/ComponenteSete";
+import ComponenteOito from "./components/ComponenteOito";
+import ComponenteNove from "./components/ComponenteNove";
+import ComponenteDez from "./components/ComponenteDez";
+import ComponentePai from "./components/comunicacao_direta/ComponentePai";
+import ComponenteMae from "./components/comunicacao_indireta/ComponenteMae";
+
+
+
+
+//19 - COMO DEFINIR ESTILOS INLINE COM STYLE NO JSX.
+function App(){
+    return (
+        <div>
+            <ComponenteMae titulo="Comunicação Indireta"/>
+            <ComponentePai titulo="Comunicação direta"/>
+            <ComponenteDez titulo="Componente Dez" corTexto="red"/>
+            <ComponenteNove titulo="Componente Nove" valor="Sapup3"/>
+            <ComponenteOito titulo="Comp 8" valor={10} valor="Sapup3"/> 
+            <ComponenteSete titulo="Comp 7" valor={1}/> 
+            <ComponenteSeis titulo="Componente 6"/>
+            <ComponenteUm titulo="1"/>
+            <ComponenteDois titulo="2"/>
+            <ComponenteTres titulo="3"/>
+            <ComponenteQuatro titulo="4"/>
+        </div>
+    );
+};
+
 
 export default App;
