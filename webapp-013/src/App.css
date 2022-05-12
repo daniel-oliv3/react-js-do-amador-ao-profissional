@@ -28,3 +28,18 @@ p.titulo {
 h1 {
   color: rgba(128, 214, 37, 0.697);
 }
+
+button {
+  width: 10%;
+  height: 30px;
+  color: white;
+  background: rgb(30, 30, 81);
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+button:hover{
+  color: rgb(30, 30, 81);
+  background: #fff;
+  font-size: 14px;
+}
