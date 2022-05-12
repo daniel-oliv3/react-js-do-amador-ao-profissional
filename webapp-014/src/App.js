@@ -1,10 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+
+//importação do componente, aula 22
+import ComponenteUm from "./components/ComponenteUm";
+import ComponenteDois from "./components/ComponenteDois";
+import ComponenteAvoA from "./components/comunicacao_direta/ComponenteAvoA";
+
 
 function App() {
   return (
     <div className="App">
-      <h1>Olá</h1>
+
+      <ComponenteAvoA/>
+      
+      <ComponenteUm/>
+      <ComponenteDois/>
     </div>
   );
 }
