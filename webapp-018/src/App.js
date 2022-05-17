@@ -4,11 +4,15 @@ import React, { useState } from 'react';
 
 export default function App(){
 
-const [valor, setValor] = useState(100);
+
+const [valor, setValor] = useState(()=>{
+  console.log('aqui_v2');
+  return 5000;
+});
+
 //Função Diminuir
   function diminuir(){
     setValor(valor_antigo => valor_antigo - 1);
-    //setValor(valor_antigo => valor_antigo - 1); para alterar em 2.
 }
 
 
@@ -20,14 +24,11 @@ function aumentar(){
   return (
     <>
 
-        <h1>React Hooks - useState</h1>
+        <h1>27 - A FORMA CORRETA DE DEFINIÇÃO DO VALOR DO USESTATE</h1>
         <button onClick={diminuir}>Diminuir</button>
         <span> Valor: {valor} </span>
         <button onClick={aumentar}>Aumentar</button>
 
-        <button onClick={()=>{
-          setValor(va => va + 100);
-        }}>Aumertar 100x</button>
     </>
   );
 }
