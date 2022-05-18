@@ -1,34 +1,25 @@
 import React, { useState } from 'react';
 
 
-
 export default function App(){
 
-
-const [valor, setValor] = useState(()=>{
-  console.log('aqui_v2');
-  return 5000;
-});
-
-//Função Diminuir
-  function diminuir(){
-    setValor(valor_antigo => valor_antigo - 1);
-}
+  const [nome, setNome] = useState(() => {
+    return "Daniel Oliv";
+  });
 
 
-//Função Aumentar
-function aumentar(){
-  setValor(valor_antigo => valor_antigo + 1);
-}
+  function alterar(){
+    setNome(a => {
+      return "Sapup3";
+    });
+  }
 
   return (
     <>
-
         <h1>28 - USESTATE ALTERANDO STRINGS E OBJETOS</h1>
-        <button onClick={diminuir}>Diminuir</button>
-        <span> Valor: {valor} </span>
-        <button onClick={aumentar}>Aumentar</button>
-
+        <hr/>
+        <h3>Nome: {nome}</h3>
+        <button onClick={alterar}>Alterar</button>
     </>
   );
 }
