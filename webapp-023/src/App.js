@@ -10,6 +10,33 @@ export default function App(){
 
 //Info..........
 const [info, setInfo] =  useState('clientes');
+const [valor, setValor] =  useState(100);
+
+useEffect(() =>{
+  console.clear();
+  switch(info){
+    case 'clientes':
+      console.table(clientes);
+      break;
+
+      case 'produtos':
+        console.table(produtos);
+        break;
+        
+        case 'vendas':
+          console.table(vendas);
+          break;
+
+        default:
+          break;  
+  }
+}, [info]);
+
+
+//...Valor
+useEffect(() => {
+  console.log('TESTE');
+}, [valor]);
 
 
   return (
@@ -17,10 +44,16 @@ const [info, setInfo] =  useState('clientes');
         <h1>30 - MAIS DETALHES SOBRE USEEFFECT</h1>
         <hr/>
 
-        <h3>{info}</h3>
+        
         <button onClick={() => setInfo('clientes')}>Clientes</button>
         <button onClick={() => setInfo('produtos')}>Produtos</button>
         <button onClick={() => setInfo('vendas')}>Vendas</button>
+
+        <button onClick={() => setValor(valor + 10)}>Aumentar</button>
+
+        <h3>{info}</h3>
+        <h3>{valor}</h3>
+
         
     </>
   );
