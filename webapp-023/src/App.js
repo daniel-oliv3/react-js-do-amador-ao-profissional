@@ -4,30 +4,24 @@ import React, { useState, useEffect } from 'react';
 
 export default function App(){
 
-  const [valor, setValor] = useState(100);
-  const [valor2, setValor2] = useState(1000);
+  const clientes = ['Daniel', 'Priscila', 'Sapup3'];
+  const produtos = ['Pão', 'Manteiga', 'Leite'];
+  const vendas = ['1 x Pão (Daniel)', '2 x Manteiga (Priscila)', '3 x Leite (Sapup3)'];
 
-  function alterar(){
-    setValor(valor + 10);
-  }
+//Info..........
+const [info, setInfo] =  useState('clientes');
 
-  function alterar2(){
-    setValor2(valor2 + 10);
-  }
-
-  useEffect(() => {
-    console.log('alterado');
-  }, [valor])
 
   return (
     <>
-        <h1>29 - React Hook useEffect</h1>
+        <h1>30 - MAIS DETALHES SOBRE USEEFFECT</h1>
         <hr/>
-        <h3>Valor: {valor}</h3>
-        <h3>Valor2: {valor2}</h3>
 
-        <button onClick={alterar}>Alterar</button>
-        <button onClick={alterar2}>Alterar2</button>
+        <h3>{info}</h3>
+        <button onClick={() => setInfo('clientes')}>Clientes</button>
+        <button onClick={() => setInfo('produtos')}>Produtos</button>
+        <button onClick={() => setInfo('vendas')}>Vendas</button>
+        
     </>
   );
 }
