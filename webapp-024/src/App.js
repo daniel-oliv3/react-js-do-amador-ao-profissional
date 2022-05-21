@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import User from "./components/User";
 
 
 export default function App(){
@@ -22,7 +23,7 @@ export default function App(){
         <hr/>
 
         {users.map(user => {
-          return <div key={user.id}>{user.firstName} {user.lastName}</div>
+          return <User key={user.id} user={user} />
         })}
         
 
