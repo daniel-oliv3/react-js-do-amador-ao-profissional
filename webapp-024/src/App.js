@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import User from "./components/User";
+import './App.css';
 
 
 export default function App(){
@@ -12,7 +13,7 @@ export default function App(){
     fetch("https://dummyjson.com/users")
     .then(response => response.json())
     .then(json => {
-      console.log(json.users)
+      //console.log(json.users)
       setUsers(json.users)
     })
   }, []);
@@ -23,7 +24,7 @@ export default function App(){
         <hr/>
 
         {users.map(user => {
-          return <User key={user.id} user={user} />
+          return <User key={user.id} usuario={user} />
         })}
         
 
