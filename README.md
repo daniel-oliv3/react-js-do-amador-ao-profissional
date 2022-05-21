@@ -191,6 +191,10 @@ Ou
 
 ### 31 - EXERCÍCIO DE LEITURA DE DADOS DE API NO USEEFFECT.
 - Ex-webapp-024
+- DummyJSON - Fake REST API of JSON data for development
+- Site - https://dummyjson.com/
+
+
 
 
 
