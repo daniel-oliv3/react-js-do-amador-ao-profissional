@@ -194,6 +194,9 @@ Ou
 - DummyJSON - Fake REST API of JSON data for development
 - Site - https://dummyjson.com/
 
+### 32 - INTRODUÇÃO AO USEREF.
+- Ex-webapp-025
+
 
 
 
