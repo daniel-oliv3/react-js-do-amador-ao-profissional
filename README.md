@@ -206,7 +206,7 @@ Ou
 ### 35 - GIT COM OS MEUS PROJETOS E COMO PASSAR UM PROJETO PARA UM AMIGO.
 - Ex-webapp-028
 - GitHub - https://github.com/daniel-oliv3
-- Winrar(Zip)Zipar os arquivos.
+## Winrar(Zip) Zipar os arquivos.
 - public
 - src
 - gitgnore
