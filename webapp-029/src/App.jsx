@@ -11,12 +11,14 @@ export default function App(){
 
   //Ref
   const idTarefa = useRef(0);
-
+  const inputRef = useRef();
 
   //Metodos
   function adicionarTarefa(){
     setListaTarefas(old => { return [...old, {id: idTarefa.current, texto: tarefa }]});
     idTarefa.current = idTarefa.current + 1;
+    setTarefa('');
+    inputRef.current.focus();
   }
 
   function limparTarefas(){
@@ -34,7 +36,7 @@ export default function App(){
         <h1>Gestor de Tarefas</h1>
         <hr/>
 
-        <input type="text" value={tarefa} onChange={(evento) => { setTarefa(evento.target.value) }}/>
+        <input ref={inputRef} type="text" value={tarefa} onChange={(evento) => { setTarefa(evento.target.value) }}/>
         <div>
           <button onClick={adicionarTarefa}>Adicionar</button>
           <button onClick={limparTarefas}>Limpar Tudo</button>
