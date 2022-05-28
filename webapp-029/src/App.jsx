@@ -1,32 +1,30 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import './App.css';
 
+  
 
 export default function App(){
 
-  const [texto, setTexto] = useState('');
-  //const inputRef = useRef();
-  const anterior = useRef('');
+  //State
+  const [listaTarefas, setListaTarefas] = useState(() => { return []});
+  const [tarefa, setTarefa] = useState(() => { return '' });
 
-  useEffect(() => {
-    anterior.current = texto;
-  }, [texto]);
-
-  function executar(){
-    //console.log(inputRef.current.value);
-    //setTexto(inputRef.current.value);
-  }
-
+  //Ref
+  const idTarefa = useRef(0);
 
   return (
     <>
-        <h1>36 - LISTA DE TAREFAS PRIMEIRA EXPERIÊNCIA DE APP REACT</h1>
+        <h1>Gestor de Tarefas</h1>
         <hr/>
-        
-        <input type="text" onChange={e => { setTexto(e.target.value)}}/><br/>
 
-        <button onClick={executar}>Executar</button>
-        <p>Texto: {texto} (anteriormente) {anterior.current}</p>
+        <input type="text" value={tarefa} onChange={(evento) => { setTarefa(evento.target.value) }}/>
+        <div>
+          <button onClick={adicionarTarefa}>Adicionar</button>
+          <button>Limpar Tudo</button>
+        </div>
+        <hr/>
+
+        <p>Tarefas: </p>
     </>
   );
 }
