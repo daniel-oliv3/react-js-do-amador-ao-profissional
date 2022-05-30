@@ -215,3 +215,6 @@ Ou
 
 ### 36 - LISTA DE TAREFAS PRIMEIRA EXPERIÊNCIA DE APP REACT.
 - Ex-webapp-029
+
+### 37 - USEMEMO. 
+- Ex-webapp-030
