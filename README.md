@@ -123,7 +123,7 @@ Ou
 
 - alteração no projeto. clear...
 
-### Inserindo codigo do Git Bash no settings.json, na aba do VSCODE. 
+## Inserindo codigo do Git Bash no settings.json, na aba do VSCODE. 
 - "arquivos/preferencias/configurações/abrir-confg-json"
 - codigo para o terminal Git Bash.
 - "terminal.integrated.defaultProfile.windows": "Git Bash"
@@ -191,7 +191,7 @@ Ou
 
 ### 31 - EXERCÍCIO DE LEITURA DE DADOS DE API NO USEEFFECT.
 - Ex-webapp-024
-- DummyJSON - Fake REST API of JSON data for development
+## DummyJSON - Fake REST API of JSON data for development
 - Site - https://dummyjson.com/
 
 ### 32 - INTRODUÇÃO AO USEREF.
