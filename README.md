@@ -225,7 +225,8 @@ Ou
 - CodeSandBox - https://codesandbox.io/
 
 ### 39 - USEREDUCER.
-- Ex-webapp-032
+- Ex-webapp-032 - useState 
+- Ex-webapp-033 - useReducer
 
 
 
