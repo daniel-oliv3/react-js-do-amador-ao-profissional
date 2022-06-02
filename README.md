@@ -228,6 +228,8 @@ Ou
 - Ex-webapp-032 - useState 
 - Ex-webapp-033 - useReducer
 
+### 40 - EXERFCÍCIO PRÁTICO COM USEREDUCER.
+- Ex-webapp-034
 
 
 
