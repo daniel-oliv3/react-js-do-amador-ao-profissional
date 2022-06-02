@@ -31,7 +31,7 @@ export default function App(){
 
   return (
     <>
-        <h1>39 - USEREDUCER</h1>
+        <h1>40 - EXERFCÍCIO PRÁTICO COM USEREDUCER</h1>
         <hr/>
         
         <p>Valor: { state.valor }</p>
