@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Nomes from "./Nomes";
   
 
 export default function App(){
@@ -22,6 +22,7 @@ export default function App(){
         <button onClick={guardarNome}>Guardar nome</button>
         <hr />
         {nomes.map(nome => <p>{nome}</p>)}
+        <Nomes nomes={nomes} />
     </>
   );
 }

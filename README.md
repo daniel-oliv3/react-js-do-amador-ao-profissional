@@ -5,6 +5,7 @@ Quais os requisitos necessarios?
 - Utilização de VS CODE e Google Chrome (ferramentas do programador)
 - Método de estudo e aplicação prática
 - Paciência...
+- Wikipedia React - https://en.wikipedia.org/wiki/React_(JavaScript_library)#
 
 ### Baixar e instalar os seguintes softwares, documentação do react.
 
@@ -234,7 +235,9 @@ Ou
 
 ### 41 - USAR O NPM PARA ADICIONAR UUID.
 - Ex-webapp-035
-- Wikipedia - https://en.wikipedia.org/wiki/React_(JavaScript_library)#
+- NPM Packeges - https://www.npmjs.com/
+- npm install uuid
+
 
 
 
