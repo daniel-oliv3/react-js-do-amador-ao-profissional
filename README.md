@@ -21,6 +21,7 @@ O que é o React?
 - Permite uma experiência de utilizador mais reativa e instantânea
 - As páginas não necessitam de ser recarregadas a cada interação
 
+
 Como funciona com o React(Javascript)?
 - O javascript funciona do lado do cliente
 - O javascript permite manipular o DOM (Document Object Model)
@@ -233,7 +234,7 @@ Ou
 
 ### 41 - USAR O NPM PARA ADICIONAR UUID.
 - Ex-webapp-035
-
+- Wikipedia - https://en.wikipedia.org/wiki/React_(JavaScript_library)#
 
 
 
