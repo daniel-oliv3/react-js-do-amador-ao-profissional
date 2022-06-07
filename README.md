@@ -1,20 +1,3 @@
-### React.js
-React (também conhecido como React.js ou ReactJS ) é uma biblioteca JavaScript de front-end gratuita e de código aberto para construir interfaces de usuário baseadas em componentes de UI. É mantido pelo Meta (anteriormente Facebook) e uma comunidade de desenvolvedores e empresas individuais. O React pode ser usado como base no desenvolvimento de aplicativos de página única , móveis ou renderizados por servidor com frameworks como Next.js . No entanto, o React está preocupado apenas com o gerenciamento de estado e com a renderização desse estado para o DOM , portanto, a criação de aplicativos React geralmente requer o uso de bibliotecas adicionais para roteamento, bem como certas funcionalidades do lado do cliente.
-
-## Uso básico.
-O seguinte é um exemplo rudimentar do uso do React em HTML com JSX e JavaScript.
-- importe  Reagir  de  "reagir" ;
--
-- const  Saudação  =  ()  =>  {
--  retornar  (
--    < div  className = "hello_world" >
--      < h1 >  Olá ,  mundo !  < /h1>
--    < /div>
--  );
-- };
--
-- exportar  saudação padrão  ;
-
 ### 1 - INTRODUÇÃO E AMBIENTE DE DESENVOLVIMENTO.
 Quais os requisitos necessarios?
 - Conhecimentos sólidos de HTML5, CSS3
