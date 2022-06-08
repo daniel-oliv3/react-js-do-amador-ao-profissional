@@ -230,7 +230,7 @@ Ou
 - Ex-webapp-032 - useState 
 - Ex-webapp-033 - useReducer
 
-### 40 - EXERFCÍCIO PRÁTICO COM USEREDUCER.
+### 40 - EXERCÍCIO PRÁTICO COM USEREDUCER.
 - Ex-webapp-034
 
 ### 41 - USAR O NPM PARA ADICIONAR UUID.
@@ -240,9 +240,9 @@ Ou
 - npm install uuid
 
 
-### 42 - EXERFCÍCIO PRÁTICO TEMA CLARO ESCURO.
+### 42 - EXERCÍCIO PRÁTICO TEMA CLARO ESCURO.
 - Ex-webapp-036
-
+- Ex-webapp-037
 
 
 
