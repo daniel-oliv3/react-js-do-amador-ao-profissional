@@ -11,7 +11,7 @@ export default function App(){
     color: escuro ? "white" : "black"
   }
 
-//Exemplo 2
+//Exemplo 2, melhor modo.
 
   return (
     <div style={tema}>
