@@ -7,7 +7,7 @@ export default function App(){
 
   return (
     <>
-        <h1>43 - EXERFCÍCIO PRÁTICO TABUADA DA MULTIPLICAÇÃO</h1>
+        <h1>43 - EXERCÍCIO PRÁTICO TABUADA DA MULTIPLICAÇÃO</h1>
         <hr/>
 
         
