@@ -244,7 +244,7 @@ Ou
 - Ex-webapp-036
 - Ex-webapp-037 
 
-### 43 - EXERFCÍCIO PRÁTICO TABUADA DA MULTIPLICAÇÃO.
+### 43 - EXERCÍCIO PRÁTICO TABUADA DA MULTIPLICAÇÃO.
 - Ex-webapp-038
 
 

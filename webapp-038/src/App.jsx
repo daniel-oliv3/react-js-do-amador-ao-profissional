@@ -1,9 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
 import './App.css';
   
 
 export default function App(){
 
+  const [valor, setValor] = useState(1);
+
+  const multiplicar = () => {
+    if(isNaN(valor)) return [];
+    let produtos = [];
+    for(let m = 1; m <= 10; m++){
+      //produtos.push(valor * m);
+      produtos.push(`${valor} x ${m} = ${valor * m}`);
+    }
+    return produtos;
+  }
 
   return (
     <>
@@ -11,8 +22,9 @@ export default function App(){
         <hr/>
 
 
-
+        <input type="number" onChange={(e) => { setValor(parseInt(e.target.value)) }} value={valor} />
         
+        {multiplicar().map(item => <p>{item}</p>)}
     </>
   );
 }
