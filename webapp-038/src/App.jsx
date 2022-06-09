@@ -10,6 +10,8 @@ export default function App(){
         <h1>43 - EXERCÍCIO PRÁTICO TABUADA DA MULTIPLICAÇÃO</h1>
         <hr/>
 
+
+
         
     </>
   );
