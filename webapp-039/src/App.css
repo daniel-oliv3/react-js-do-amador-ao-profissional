@@ -5,3 +5,16 @@
     font-family: Arial, Helvetica, sans-serif;
     background-color: lightgray;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+p {
+    margin: 20px;
+}
