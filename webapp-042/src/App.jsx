@@ -10,7 +10,8 @@ export default function App(){
         <h1>47 - ADICIONAR BOOTSTRAP A UM PROJETO.</h1>
         <hr/>
 
-        
+        <a href="#" className="btn btn-primary">Botão de Bootstrap</a>
+        <div className="alert alert-success">Operação Realizada com Sucesso!</div>
     </>
   );
 }
