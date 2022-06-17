@@ -259,6 +259,12 @@ Ou
 ### 47 - ADICIONAR BOOTSTRAP A UM PROJETO.
 - Ex-webapp-042
 
+## Bootstrap - Install via package manager
+- Site - https://getbootstrap.com/
+- React-Bootstrap - https://react-bootstrap.github.io/
+
+- npm install bootstrap
+
 
 
 
