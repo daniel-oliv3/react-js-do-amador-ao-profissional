@@ -1,5 +1,6 @@
 {
-  "name": "webapp-017",
+  "name": "react-build",
+  "homepage": "https://www.sys4soft.com/react/app1",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
