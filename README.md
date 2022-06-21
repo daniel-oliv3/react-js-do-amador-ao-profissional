@@ -268,6 +268,14 @@ Ou
 ### 48 - PASSAR APLICAÇÃO PARA PRODUÇÃO E HOSPEDAR NUM SERVIDOR WEB.
 - Ex-webapp-043
 
+- npm run build
+
+- npm install -g serve
+
+- serve -s build
+
+## FileZilla Client for Windows. 
+- Site - https://filezilla-project.org/download.php?platform=win64
 
 
 
