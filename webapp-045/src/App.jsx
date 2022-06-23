@@ -20,7 +20,7 @@ export default function App(){
 
   return (
     <>
-        <h1>49 - EXERCÍCIO PRÁTICO INÍCIO DA LISTA DE CONTACTOS</h1>
+        <h1>50 - EXERCÍCIO PRÁTICO APRESENTAR A LISTA DE CONTACTOS</h1>
         <hr/>
 
         <div>
