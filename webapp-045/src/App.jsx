@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ListaContatos from "./Components/ListaContatos";
 import './App.css';
   
 
@@ -46,7 +47,7 @@ export default function App(){
 
         <hr />
 
-        
+        <ListaContatos listaContatos={listaContatos}/>
     </>
   );
 }
