@@ -37,17 +37,16 @@ export default function App(){
           <label>Telefone: </label><br/>
           <input type="text" onChange={definirTelefone} value = {contato.telefone} />
         </div>
-        
-
-        {/*<p>{contato.nome}</p>
-        <p>{contato.telefone}</p>*/}
-        {/* Render da lista de contatos */}
 
         <button onClick={adicionarContato}>Adicionar Contato</button>
 
         <hr />
 
-        <ListaContatos listaContatos={listaContatos}/>
+        <ul>
+          {listaContatos.map(ct => {
+            return <Contato key={chave} nome={ct.nome} telefone={ct.telefone} />
+          })}
+        </ul>
     </>
   );
 }

@@ -288,6 +288,9 @@ Ou
 
 ### 51 - EXERCÍCIO PRÁTICO APRESENTAR A LISTA DE CONTATOS DE FORMA ALTERNATIVA.
 - Ex-webapp-046
+- NPM Js - https://www.npmjs.com/package/uuid
+- Github - https://github.com/uuidjs/uuid
+- npm install uuid
 
 ### 52 - EXERCÍCIO PRÁTICO VALIDAÇÕES E USEREF PARA FOCUS.
 - Ex-webapp-047
