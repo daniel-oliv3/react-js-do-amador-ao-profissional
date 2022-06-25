@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import ListaContatos from "./Components/ListaContatos";
+//import ListaContatos from "./Components/ListaContatos";
 import './App.css';
+import { v4 as chave } from 'uuid';
   
 
 export default function App(){
@@ -19,9 +20,17 @@ export default function App(){
     setContato({...contato, telefone: event.target.value});
   }
 
+  
   function adicionarContato(){
+    /*Validação dos campos*/
+    if(contato.nome === "" || contato.telefone === ""){
+      //console.log('return');
+      return
+    }
+
+
+    /*Adicionar novo contato a lista*/
     setListaContatos([...listaContatos, contato]);
-    console.table(listaContatos);
   }
 
   return (
@@ -39,15 +48,17 @@ export default function App(){
         </div>
         
 
-        {/*<p>{contato.nome}</p>
-        <p>{contato.telefone}</p>*/}
-        {/* Render da lista de contatos */}
-
         <button onClick={adicionarContato}>Adicionar Contato</button>
 
         <hr />
 
-        <ListaContatos listaContatos={listaContatos}/>
+        {/*<ListaContatos listaContatos={listaContatos}/>*/}
+
+        <ul>
+          {listaContatos.map(ct => {
+            return <li key={chave}>{`${ct.nome} | ${ct.telefone}`}</li>
+          })}
+        </ul>
     </>
   );
 }
