@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 //import ListaContatos from "./Components/ListaContatos";
-import './App.css';
+import Contato from "./Components/Contato";
 import { v4 as chave } from 'uuid';
-  
+import './App.css';
+
+ 
 
 export default function App(){
 
@@ -56,7 +58,8 @@ export default function App(){
 
         <ul>
           {listaContatos.map(ct => {
-            return <li key={chave}>{`${ct.nome} | ${ct.telefone}`}</li>
+            //return <li key={chave}>{`${ct.nome} | ${ct.telefone}`}</li>
+            return <Contato key={chave} nome={ct.nome} telefone={ct.telefone} />
           })}
         </ul>
     </>
