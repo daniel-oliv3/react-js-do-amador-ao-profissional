@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import ListaContatos from "./Components/ListaContatos";
+//import ListaContatos from "./Components/ListaContatos";
+import Contato from "./Components/Contato";
+import { v4 as chave } from 'uuid';
 import './App.css';
-  
+
+ 
 
 export default function App(){
 
@@ -19,14 +22,22 @@ export default function App(){
     setContato({...contato, telefone: event.target.value});
   }
 
+  
   function adicionarContato(){
+    /*Validação dos campos*/
+    if(contato.nome === "" || contato.telefone === ""){
+      //console.log('return');
+      return
+    }
+
+
+    /*Adicionar novo contato a lista*/
     setListaContatos([...listaContatos, contato]);
-    console.table(listaContatos);
   }
 
   return (
     <>
-        <h1>52 - EXERCÍCIO PRÁTICO VALIDAÇÕES E USEREF PARA FOCUS</h1>
+        <h1>51 - EXERCÍCIO PRÁTICO APRESENTAR A LISTA DE CONTATOS DE FORMA ALTERNATIVA</h1>
         <hr/>
 
         <div>
@@ -37,13 +48,17 @@ export default function App(){
           <label>Telefone: </label><br/>
           <input type="text" onChange={definirTelefone} value = {contato.telefone} />
         </div>
+        
 
         <button onClick={adicionarContato}>Adicionar Contato</button>
 
         <hr />
 
+        {/*<ListaContatos listaContatos={listaContatos}/>*/}
+
         <ul>
           {listaContatos.map(ct => {
+            //return <li key={chave}>{`${ct.nome} | ${ct.telefone}`}</li>
             return <Contato key={chave} nome={ct.nome} telefone={ct.telefone} />
           })}
         </ul>
