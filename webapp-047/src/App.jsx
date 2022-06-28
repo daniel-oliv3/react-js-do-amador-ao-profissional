@@ -10,6 +10,7 @@ export default function App() {
 
   //useRef
   const inputNome = useRef();
+  const inputTelefone = useRef();
 
   //Metodos/funções
   function definirNome(event) {
@@ -26,7 +27,10 @@ export default function App() {
 
     /* Verificar se o contat ja existe */
     let duplicado = listaContatos.find((ct) => ct.nome === contato.nome && ct.telefone === contato.telefone);
-    if(typeof duplicado !== 'undefined') return
+    if(typeof duplicado !== 'undefined'){
+      inputTelefone.current.focus();
+      return;
+    }
 
     /*Adicionar novo contato a lista*/
     setListaContatos([...listaContatos, contato]);
@@ -53,11 +57,7 @@ export default function App() {
       <div>
         <label>Telefone: </label>
         <br />
-        <input
-          type="text"
-          onChange={definirTelefone}
-          value={contato.telefone}
-        />
+        <input type="text" ref={inputTelefone} onChange={definirTelefone} value={contato.telefone} />
       </div>
 
       <button onClick={adicionarContato}>Adicionar Contato</button>
