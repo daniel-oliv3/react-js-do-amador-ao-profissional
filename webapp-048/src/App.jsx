@@ -44,6 +44,15 @@ export default function App() {
 
   }
 
+
+  //funcao BTN Enter
+  function enterAdicionarContato(event){
+    if(event.code === 'Enter'){
+      adicionarContato();
+    }
+  }
+  
+
   return (
     <>
       <h1>53 - MELHOR EXPERIÊNCIA DE UTILIZADOR</h1>
@@ -57,7 +66,7 @@ export default function App() {
       <div>
         <label>Telefone: </label>
         <br />
-        <input type="text" ref={inputTelefone} onChange={definirTelefone} value={contato.telefone} />
+        <input type="text" ref={inputTelefone} onChange={definirTelefone} onKeyUp={enterAdicionarContato} value={contato.telefone} />
       </div>
 
       <button onClick={adicionarContato}>Adicionar Contato</button>
