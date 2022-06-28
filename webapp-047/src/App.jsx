@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Contato from "./Components/Contato";
 import { v4 as chave } from "uuid";
 import "./App.css";
@@ -6,8 +6,10 @@ import "./App.css";
 export default function App() {
   //states
   const [contato, setContato] = useState({ nome: "", telefone: "" });
-
   const [listaContatos, setListaContatos] = useState([]);
+
+  //useRef
+  const inputNome = useRef();
 
   //Metodos/funções
   function definirNome(event) {
@@ -27,6 +29,14 @@ export default function App() {
 
     /*Adicionar novo contato a lista*/
     setListaContatos([...listaContatos, contato]);
+
+
+    /* Limpar o contato */
+    setContato({nome: '', telefone: ''});
+
+    /*Colocar focus no input nome */
+    inputNome.current.focus();
+
   }
 
   return (
@@ -37,7 +47,7 @@ export default function App() {
       <div>
         <label>Nome: </label>
         <br />
-        <input type="text" onChange={definirNome} value={contato.nome} />
+        <input type="text" ref={inputNome} onChange={definirNome} value={contato.nome} />
       </div>
       <div>
         <label>Telefone: </label>
