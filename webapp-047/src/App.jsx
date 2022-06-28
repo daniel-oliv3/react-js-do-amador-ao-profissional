@@ -22,10 +22,11 @@ export default function App() {
 
   function adicionarContato() {
     /*Validação dos campos*/
-    if (contato.nome === "" || contato.telefone === "") {
-      //console.log('return');
-      return;
-    }
+    if (contato.nome === "" || contato.telefone === "") return
+
+    /* Verificar se o contat ja existe */
+    let duplicado = listaContatos.find((ct) => ct.nome === contato.nome && ct.telefone === contato.telefone);
+    if(typeof duplicado !== 'undefined') return
 
     /*Adicionar novo contato a lista*/
     setListaContatos([...listaContatos, contato]);
@@ -66,7 +67,7 @@ export default function App() {
       {/* Apresentação da lisa de contatos */}
       <>
         {listaContatos.map((ct) => {
-          return <Contato key={chave} nome={ct.nome} telefone={ct.telefone} />;
+          return <Contato key={chave()} nome={ct.nome} telefone={ct.telefone} />;
         })}
       </>
     </>
