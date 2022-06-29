@@ -68,7 +68,7 @@ export default function App() {
 
   return (
     <>
-      <h1>54 - GUARDAR A LISTA DE CONTATOS NO LOCALSTORAGE</h1>
+      <h1>55 - LIMPAR A LISTA NO LOCALSTORAGE</h1>
       <hr />
 
       <div>
