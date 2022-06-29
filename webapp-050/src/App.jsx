@@ -65,6 +65,11 @@ export default function App() {
   }, [listaContatos]);
 
 
+  function limparStorage(){
+    setListaContatos([]);
+  }
+
+
 
   return (
     <>
@@ -83,6 +88,7 @@ export default function App() {
       </div>
 
       <button onClick={adicionarContato}>Adicionar Contato</button>
+      <button onClick={limparStorage}>Limpar Lista</button>
 
       <hr />
 
