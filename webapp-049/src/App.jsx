@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Contato from "./Components/Contato";
 import { v4 as chave } from "uuid";
 import "./App.css";
@@ -44,7 +44,6 @@ export default function App() {
 
   }
 
-
   //funcao BTN Enter
   function enterAdicionarContato(event){
     if(event.code === 'Enter'){
@@ -52,10 +51,25 @@ export default function App() {
     }
   }
   
+  /*persistencia do state*/
+  /*atuaalizar a lista de contatos no localstorage*/
+  useEffect(() => {
+    localStorage.setItem('meus_contatos', JSON.stringify(listaContatos))
+  }, [listaContatos]);
+
+
+  /*carregar lista de contato no localstorage*/
+  useEffect(() => {
+    if(localStorage.getItem('meus_contatos') !== null){
+      setListaContatos(JSON.parse(localStorage.getItem('meus_contatos')));
+    }
+  }, []);
+
+
 
   return (
     <>
-      <h1>53 - MELHOR EXPERIÊNCIA DE UTILIZADOR</h1>
+      <h1>54 - GUARDAR A LISTA DE CONTATOS NO LOCALSTORAGE</h1>
       <hr />
 
       <div>
