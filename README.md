@@ -304,6 +304,9 @@ Ou
 ### 55 - LIMPAR A LISTA NO LOCALSTORAGE.
 - Ex-webapp-050
 
+### 56 - REMOVER CONTATO POR OBJETO.
+- Ex-webapp-051
+
 
 
 
