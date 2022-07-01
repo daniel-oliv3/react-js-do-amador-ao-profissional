@@ -4,15 +4,15 @@ import { v4 as chave } from "uuid";
 import "./App.css";
 
 export default function App() {
-  //states
+  /* states */
   const [contato, setContato] = useState({ nome: "", telefone: "" });
   const [listaContatos, setListaContatos] = useState([]);
 
-  //useRef
+  /* useRef */
   const inputNome = useRef();
   const inputTelefone = useRef();
 
-  //Metodos/funções
+  /* Metodos/funções */
   function definirNome(event) {
     setContato({ ...contato, nome: event.target.value });
   }
@@ -22,7 +22,7 @@ export default function App() {
   }
 
   function adicionarContato() {
-    /*Validação dos campos*/
+    /* Validação dos campos*/
     if (contato.nome === "" || contato.telefone === "") return
 
     /* Verificar se o contat ja existe */
@@ -32,41 +32,49 @@ export default function App() {
       return;
     }
 
-    /*Adicionar novo contato a lista*/
+    /* Adicionar novo contato a lista*/
     setListaContatos([...listaContatos, contato]);
 
 
     /* Limpar o contato */
     setContato({nome: '', telefone: ''});
 
-    /*Colocar focus no input nome */
+    /* Colocar focus no input nome */
     inputNome.current.focus();
 
   }
 
-  //funcao BTN Enter
+  // Funcao BTN Enter
   function enterAdicionarContato(event){
     if(event.code === 'Enter'){
       adicionarContato();
     }
   }
   
-  /*persistencia do state*/  
-  /*carregar lista de contato no localstorage*/
+  /* Persistencia do state */  
+  /* Carregar lista de contato no localstorage */
   useEffect(() => {
     if(localStorage.getItem('meus_contatos') !== null){
       setListaContatos(JSON.parse(localStorage.getItem('meus_contatos')));
     }
   }, []);
 
-  /*atuaalizar a lista de contatos no localstorage*/
+  /* Atuaalizar a lista de contatos no localstorage */
   useEffect(() => {
     localStorage.setItem('meus_contatos', JSON.stringify(listaContatos))
   }, [listaContatos]);
 
 
+  /* Limpar toda a lista */
   function limparStorage(){
     setListaContatos([]);
+  }
+
+
+  /* Remover a lista */
+  function removerContato(ctRemover){
+    let tmp = listaContatos.filter(ct => ct.nome !== ctRemover.nome && ct.telefone !== ctRemover.telefone);
+    setListaContatos(tmp);
   }
 
 
@@ -95,7 +103,7 @@ export default function App() {
       {/* Apresentação da lisa de contatos */}
       <>
         {listaContatos.map((ct) => {
-          return <Contato key={chave()} nome={ct.nome} telefone={ct.telefone} />;
+          return <Contato key={chave()} nome={ct.nome} telefone={ct.telefone} remover={removerContato} />;
         })}
       </>
     </>
