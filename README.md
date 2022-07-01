@@ -307,6 +307,8 @@ Ou
 ### 56 - REMOVER CONTATO POR OBJETO.
 - Ex-webapp-051
 
+### 57 - REMOVER CONTATO POR ID ÚNICO.
+- Ex-webapp-052
 
 
 
