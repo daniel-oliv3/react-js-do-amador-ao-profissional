@@ -71,7 +71,7 @@ export default function App() {
   }
 
 
-  /* Remover a lista */
+  /* Remover um contato lista */
   function removerContato(ctRemover){
     let tmp = listaContatos.filter(ct => ct.nome !== ctRemover.nome && ct.telefone !== ctRemover.telefone);
     setListaContatos(tmp);
