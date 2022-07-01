@@ -5,7 +5,7 @@ import "./App.css";
 
 export default function App() {
   /* states */
-  const [contato, setContato] = useState({ nome: "", telefone: "" });
+  const [contato, setContato] = useState({ nome: '', telefone: '' });
   const [listaContatos, setListaContatos] = useState([]);
 
   /* useRef */
@@ -25,7 +25,7 @@ export default function App() {
     /* Validação dos campos*/
     if (contato.nome === "" || contato.telefone === "") return
 
-    /* Verificar se o contat ja existe */
+    /* Verificar se o contato ja existe */
     let duplicado = listaContatos.find((ct) => ct.nome === contato.nome && ct.telefone === contato.telefone);
     if(typeof duplicado !== 'undefined'){
       inputTelefone.current.focus();
@@ -33,7 +33,7 @@ export default function App() {
     }
 
     /* Adicionar novo contato a lista*/
-    setListaContatos([...listaContatos, contato]);
+    setListaContatos([...listaContatos, {...contato, id: chave()}]);
 
 
     /* Limpar o contato */
@@ -72,8 +72,8 @@ export default function App() {
 
 
   /* Remover um contato lista */
-  function removerContato(ctRemover){
-    let tmp = listaContatos.filter(ct => ct.nome !== ctRemover.nome && ct.telefone !== ctRemover.telefone);
+  function removerContato(id){
+    let tmp = listaContatos.filter(ct => ct.id !== id);
     setListaContatos(tmp);
   }
 
@@ -101,7 +101,7 @@ export default function App() {
 
       {/* Apresentação da lisa de contatos */}    
         {listaContatos.map((ct) => {
-          return <Contato key={chave()} nome={ct.nome} telefone={ct.telefone} remover={removerContato} />;
+          return <Contato key={ct.id} id={ct.id} nome={ct.nome} telefone={ct.telefone} remover={removerContato} />;
         })}
     </>
   );
