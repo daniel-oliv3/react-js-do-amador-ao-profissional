@@ -97,15 +97,12 @@ export default function App() {
 
       <button onClick={adicionarContato}>Adicionar Contato</button>
       <button onClick={limparStorage}>Limpar Lista</button>
-
       <hr />
 
-      {/* Apresentação da lisa de contatos */}
-      <>
+      {/* Apresentação da lisa de contatos */}    
         {listaContatos.map((ct) => {
           return <Contato key={chave()} nome={ct.nome} telefone={ct.telefone} remover={removerContato} />;
         })}
-      </>
     </>
   );
 }
