@@ -310,6 +310,8 @@ Ou
 ### 57 - REMOVER CONTATO POR ID ÚNICO.
 - Ex-webapp-052
 
+### 58 - ADICIONAR O BOOTSTRAP À LISTA DE CONTATOS.
+- Ex-webapp-053
 
 
 
