@@ -91,17 +91,24 @@ export default function App() {
       </div>
 
 
-      <div className="container-fluid">
+      <div className="container-fluid formulario">
         <div className="row">
-          <div className="col">
-            <div>
-              <label>Nome: </label><br />   
-              <input type="text" ref={inputNome} onChange={definirNome} value={contato.nome} />
+          <div className="col p-3">
+            
+            <div className="row justify-content-center">
+              <div className="col-4">
+                <div className="mb-3">
+                  <label className="form-label">Nome </label><br />   
+                  <input type="text" ref={inputNome} onChange={definirNome} value={contato.nome} className="form-control" />
+                </div>
+                <div>
+                  <label className="form-label">Telefone </label><br />      
+                  <input type="text" ref={inputTelefone} onChange={definirTelefone} onKeyUp={enterAdicionarContato} value={contato.telefone} className="form-control" />
+                </div>
+              </div>
             </div>
-            <div>
-              <label>Telefone: </label><br />      
-              <input type="text" ref={inputTelefone} onChange={definirTelefone} onKeyUp={enterAdicionarContato} value={contato.telefone} />
-            </div>
+
+            
             <button onClick={adicionarContato}>Adicionar Contato</button>
             <button onClick={limparStorage}>Limpar Lista</button>
           </div>
