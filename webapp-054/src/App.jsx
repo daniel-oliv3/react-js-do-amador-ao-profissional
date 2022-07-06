@@ -81,23 +81,36 @@ export default function App() {
 
   return (
     <>
-      <h1 className="text-center">59 - ASPETO VISUAL DO TÍTULO E DO FORMULÁRIO</h1>
-      <hr />
 
-      <div>
-        <label>Nome: </label>
-        <br />
-        <input type="text" ref={inputNome} onChange={definirNome} value={contato.nome} />
-      </div>
-      <div>
-        <label>Telefone: </label>
-        <br />
-        <input type="text" ref={inputTelefone} onChange={definirTelefone} onKeyUp={enterAdicionarContato} value={contato.telefone} />
+      <div className="container-fluid titulo">
+        <div className="row">
+          <div className="col text-center">
+            <h4 className="text-center">59 - ASPETO VISUAL DO TÍTULO E DO FORMULÁRIO</h4>
+          </div>
+        </div>
       </div>
 
-      <button onClick={adicionarContato}>Adicionar Contato</button>
-      <button onClick={limparStorage}>Limpar Lista</button>
-      <hr />
+
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col">
+            <div>
+              <label>Nome: </label><br />   
+              <input type="text" ref={inputNome} onChange={definirNome} value={contato.nome} />
+            </div>
+            <div>
+              <label>Telefone: </label><br />      
+              <input type="text" ref={inputTelefone} onChange={definirTelefone} onKeyUp={enterAdicionarContato} value={contato.telefone} />
+            </div>
+            <button onClick={adicionarContato}>Adicionar Contato</button>
+            <button onClick={limparStorage}>Limpar Lista</button>
+          </div>
+        </div>
+      </div>
+
+
+      
+
 
       {/* Apresentação da lisa de contatos */}    
         {listaContatos.map((ct) => {
