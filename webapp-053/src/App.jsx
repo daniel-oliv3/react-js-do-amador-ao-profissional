@@ -81,7 +81,7 @@ export default function App() {
 
   return (
     <>
-      <h1>58 - ADICIONAR O BOOTSTRAP À LISTA DE CONTATOS</h1>
+      <h1 className="text-center">58 - ADICIONAR O BOOTSTRAP À LISTA DE CONTATOS</h1>
       <hr />
 
       <div>
