@@ -81,7 +81,7 @@ export default function App() {
 
   return (
     <>
-      <h1>57 - REMOVER CONTATO POR ID ÚNICO</h1>
+      <h1>58 - ADICIONAR O BOOTSTRAP À LISTA DE CONTATOS</h1>
       <hr />
 
       <div>
