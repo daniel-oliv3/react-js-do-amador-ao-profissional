@@ -1,7 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
-import Contato from "./Components/Contato";
-import { v4 as chave } from "uuid";
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faList, faTrash } from '@fortawesome/free-solid-svg-icons';
+
 import "./App.css";
+import { v4 as chave } from "uuid";
+import Contato from "./Components/Contato";
+
+
 
 export default function App() {
   /* states */
@@ -85,7 +91,7 @@ export default function App() {
       <div className="container-fluid titulo">
         <div className="row">
           <div className="col text-center">
-            <h4 className="text-center">61 - ADICIONAR ICONES FONTAWESOME AO PROJETO</h4>
+            <h4 className="text-center"><FontAwesomeIcon icon={faList} className="me-3" />61 - ADICIONAR ICONES FONTAWESOME AO PROJETO</h4>
           </div>
         </div>
       </div>
@@ -108,10 +114,14 @@ export default function App() {
 
                 <div className="row mt-3">
                   <div className="col text-start">
-                    <button onClick={limparStorage} className="btn btn-outline-danger">Limpar Lista</button>
+                    <button onClick={limparStorage} className="btn btn-outline-warning">
+                      <FontAwesomeIcon icon={faTrash} className="me-2"/>
+                      Limpar Lista</button>
                   </div>
                   <div className="col text-end">
-                    <button onClick={adicionarContato} className="btn btn-outline-primary">Adicionar Contato</button>
+                    <button onClick={adicionarContato} className="btn btn-outline-primary">
+                      
+                      Adicionar Contato</button>
                   </div>
                 </div>
               </div>
