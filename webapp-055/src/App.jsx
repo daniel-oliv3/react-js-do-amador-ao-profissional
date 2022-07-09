@@ -96,7 +96,7 @@ export default function App() {
           <div className="col p-3">
             
             <div className="row justify-content-center">
-              <div className="col-4">
+              <div className="col-10 col-sm-8 col-md-6 col-lg-4">
                 <div className="mb-3">
                   <label className="form-label">Nome </label><br />   
                   <input type="text" ref={inputNome} onChange={definirNome} value={contato.nome} className="form-control" />
@@ -105,12 +105,17 @@ export default function App() {
                   <label className="form-label">Telefone </label><br />      
                   <input type="text" ref={inputTelefone} onChange={definirTelefone} onKeyUp={enterAdicionarContato} value={contato.telefone} className="form-control" />
                 </div>
-              </div>
-            </div>
 
-            
-            <button onClick={adicionarContato}>Adicionar Contato</button>
-            <button onClick={limparStorage}>Limpar Lista</button>
+                <div className="row mt-3">
+                  <div className="col text-start">
+                    <button onClick={limparStorage} className="btn btn-outline-danger">Limpar Lista</button>
+                  </div>
+                  <div className="col text-end">
+                    <button onClick={adicionarContato} className="btn btn-outline-primary">Adicionar Contato</button>
+                  </div>
+                </div>
+              </div>
+            </div>     
           </div>
         </div>
       </div>
