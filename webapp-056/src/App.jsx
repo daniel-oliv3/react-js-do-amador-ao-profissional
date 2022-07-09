@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faList, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faCircle, faCirclePlus, faList, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 import "./App.css";
 import { v4 as chave } from "uuid";
@@ -120,7 +120,7 @@ export default function App() {
                   </div>
                   <div className="col text-end">
                     <button onClick={adicionarContato} className="btn btn-outline-primary">
-                      
+                    <FontAwesomeIcon icon={faCirclePlus} className="me-2"/>
                       Adicionar Contato</button>
                   </div>
                 </div>
