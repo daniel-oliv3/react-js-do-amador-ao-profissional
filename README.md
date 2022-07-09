@@ -328,5 +328,9 @@ Ou
 ### 61 - ADICIONAR ICONES FONTAWESOME AO PROJETO.
 - Ex-webapp-056
 
+## FontAwesome.
+- Site - https://fontawesome.com/
+
+
 
 
