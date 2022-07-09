@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle, faCirclePlus, faList, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faCirclePlus, faList, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 import "./App.css";
 import { v4 as chave } from "uuid";

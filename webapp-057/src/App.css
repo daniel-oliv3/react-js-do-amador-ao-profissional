@@ -1,8 +1,11 @@
 /* App.css*/
+body {
+    background-color: rgb(27, 42, 74);
+    color: #fff;
+}
 
 .titulo {
     padding: 20px;
-    background-color: rgb(27, 42, 74);
     color: white;
 }
 
