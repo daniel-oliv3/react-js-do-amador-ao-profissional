@@ -91,7 +91,7 @@ export default function App() {
       <div className="container-fluid titulo">
         <div className="row">
           <div className="col text-center">
-            <h4 className="text-center"><FontAwesomeIcon icon={faList} className="me-3" />62 - FINALIZAÇÃO DA APLICAÇÃO</h4>
+            <h4 className="text-center"><FontAwesomeIcon icon={faList} className="me-3" />Lista de Contatos</h4>
           </div>
         </div>
       </div>
