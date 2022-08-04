@@ -1,11 +1,11 @@
 ### 1 - INTRODUÇÃO E AMBIENTE DE DESENVOLVIMENTO.
 Quais os requisitos necessarios?
-- Conhecimentos sólidos de HTML5, CSS3
-- Conhecimentow sólidos JS (ES6)
-- Utilização de VS CODE e Google Chrome (ferramentas do programador)
+- Conhecimentos sólidos de **HTML5**, **CSS3**
+- Conhecimentow sólidos **JS** `(ES6)`
+- Utilização de **VS CODE** e **Google Chrome** (`ferramentas do programador`)
 - Método de estudo e aplicação prática
 - Paciência...
-- Wikipedia React - https://en.wikipedia.org/wiki/React_(JavaScript_library)#
+- Wikipedia **React** - https://en.wikipedia.org/wiki/React_(JavaScript_library)#
 
 ### Baixar e instalar os seguintes softwares, documentação do react.
 
@@ -15,24 +15,24 @@ Quais os requisitos necessarios?
 
 
 ### 2 - O QUE É O REACT E HTML VS REACT.
-O que é o React?
-- React(ou Reactjs) é uma biblioteca de Javascript
+O que é o **React**?
+- React(ou Reactjs) é uma biblioteca de **Javascript**
 - Focada em desenvolvimento Front-end
 - Serve para construir User Interfaces
 - Permite uma experiência de utilizador mais reativa e instantânea
 - As páginas não necessitam de ser recarregadas a cada interação
 
 
-Como funciona com o React(Javascript)?
+Como funciona com o **React**(Javascript)?
 - O javascript funciona do lado do cliente
-- O javascript permite manipular o DOM (Document Object Model)
+- O javascript permite manipular o **DOM** (`Document Object Model`)
 - O react atualiza partes da página sem a necessidade de recarregamento
-- O react é uma biblioteca que funciona do lado do cliente
-- Permite a construção moderna de interfaces de utilizador (UI)
+- O react é uma biblioteca que funciona do lado do **cliente**
+- Permite a construção moderna de **interfaces de utilizador** (`UI`)
 
 
 ### 3 - COMO FUNCIONA O REACT REACT COMPONENTS.
-O que são os React Components?
+O que são os React **Components**?
 
 - Geralmente, componentes React são como funções JavaScript. 
 - Eles aceitam entradas como propriedades (chamadas “props”) 
@@ -51,30 +51,44 @@ Comando para a criação do projeto.
 
 
 ### Solucionando Erros.
-Erro:
+**Erro**:
 - "You are running `create-react-app` 5.0.0, which is behind the latest release (5.0.1)."
 
-- npm unistall -g create-react-app
-- yarn global remove create-react-app
-- npx clear-npx-cache
-- npm install -g create-react-app
+```
+npm unistall -g create-react-app
+```
+```
+yarn global remove create-react-app
+```
+```
+npx clear-npx-cache
+```
+```
+npm install -g create-react-app
+```
 
-Criando o Projeto.
-### npx create-react-app webapp-001
 
+## Criando o Projeto React.
+- Projeto **Webapp-001**
+```
+npx create-react-app webapp-001
+```
 
-Rodar o Projeto React.
-### yarn start
-Ou
-### npm start
-
+**Rodar o Projeto React.**
+```
+yarn start
+```
+**Ou**
+```
+npm start
+```
 
 ### 5 - ESTRUTURA DA PASTA DO PROJETO REACT.
-- node_modules 
-- public
-- src
-- packege-lock.json
-- packege.json
+- `node_modules` 
+- `public`
+- `src`
+- `packege-lock.json`
+- `packege.json`
 
 
 ### 6 - PRIMEIRO EXERCÍCIO DE REACT.
@@ -89,24 +103,33 @@ Ou
 Criando o Projeto.
 ### npx create-react-app webapp-002
 
-Rodar o Projeto React.
-### yarn start
-Ou
-### npm start
-
+**Rodar o Projeto React.**
+```
+yarn start
+```
+**Ou**
+```
+npm start
+```
 
 ### 9 - REPRODUÇÃO DO EXERCÍCIO DA AULA 2.
 - criando o projeto webapp-003
 
-Criando o Projeto.
-### npx create-react-app webapp-003
+**Criando o Projeto React.**
+```
+npx create-react-app webapp-003
+```
+**Rodar o Projeto React.**
+```
+yarn start
+```
+**Ou**
+```
+npm start
+```
 
-Rodar o Projeto React.
-### yarn start
-Ou
-### npm start
 
-- alteração no projeto. clear...
+- alteração no projeto. **clear**...
 
 
 ### 10 - INTRODUÇÃO A REACT PROPS.
@@ -115,19 +138,26 @@ Ou
 ### 11 - REORGANIZAÇÃO DO PROJETO E PASCALCASE.
 - criando o projeto webapp-004
 
-Criando o Projeto.
-### npx create-react-app webapp-004
+## Criando o Projeto React.
+``` 
+npx create-react-app webapp-004
+```
 
-Rodar o Projeto React.
-### yarn start
-Ou
-### npm start
+**Rodar o Projeto React.**
+```
+yarn start
+```
+**Ou**
+```
+npm start
+```
 
-- alteração no projeto. clear...
+- alteração no projeto. **clear**...
 
 ## Inserindo codigo do Git Bash no settings.json, na aba do VSCODE. 
 - "arquivos/preferencias/configurações/abrir-confg-json"
 - codigo para o terminal Git Bash.
+
 - "terminal.integrated.defaultProfile.windows": "Git Bash"
 
 
@@ -209,11 +239,11 @@ Ou
 - Ex-webapp-028
 - GitHub - https://github.com/daniel-oliv3
 ## Winrar(Zip) Zipar os arquivos.
-- public
-- src
-- gitgnore
-- package.json
-- README.md
+- `public`
+- `src`
+- `gitgnore`
+- `package.json`
+- `README.md`
 
 ### 36 - LISTA DE TAREFAS PRIMEIRA EXPERIÊNCIA DE APP REACT.
 - Ex-webapp-029
@@ -237,8 +267,9 @@ Ou
 - Ex-webapp-035
 ## NPM Packeges
 - NPM Packeges - https://www.npmjs.com/
-- npm install uuid
-
+```
+npm install uuid
+```
 
 ### 42 - EXERCÍCIO PRÁTICO TEMA CLARO ESCURO.
 - Ex-webapp-036
@@ -262,18 +293,21 @@ Ou
 ## Bootstrap - Install via package manager
 - Site - https://getbootstrap.com/
 - React-Bootstrap - https://react-bootstrap.github.io/
-
-- npm install bootstrap
-
+```
+npm install bootstrap
+```
 ### 48 - PASSAR APLICAÇÃO PARA PRODUÇÃO E HOSPEDAR NUM SERVIDOR WEB.
 - Ex-webapp-043
 
-- npm run build
-
-- npm install -g serve
-
-- serve -s build
-
+```
+npm run build
+```
+```
+npm install -g serve
+```
+```
+serve -s build
+```
 ## FileZilla Client for Windows. 
 - Site - https://filezilla-project.org/download.php?platform=win64
 
@@ -290,8 +324,9 @@ Ou
 - Ex-webapp-046
 - NPM Js - https://www.npmjs.com/package/uuid
 - Github - https://github.com/uuidjs/uuid
-- npm install uuid
-
+```
+npm install uuid
+```
 ### 52 - EXERCÍCIO PRÁTICO VALIDAÇÕES E USEREF PARA FOCUS.
 - Ex-webapp-047
 
@@ -316,8 +351,9 @@ Ou
 ## React Bootstrap.
 
 - Site - https://react-bootstrap.github.io/
-
-- npm install react-bootstrap bootstrap
+```
+npm install react-bootstrap bootstrap
+```
 
 ### 59 - ASPETO VISUAL DO TÍTULO E DO FORMULÁRIO.
 - Ex-webapp-054
@@ -332,15 +368,38 @@ Ou
 - Site - https://fontawesome.com/
 
 - React FontAwesome - https://fontawesome.com/v5/docs/web/use-with/react
-
-- npm i --save @fortawesome/fontawesome-svg-core
-
-- npm install --save @fortawesome/free-solid-svg-icons
-
-- npm install --save @fortawesome/react-fontawesome
+```
+npm i --save @fortawesome/fontawesome-svg-core
+```
+```
+npm install --save @fortawesome/free-solid-svg-icons
+```
+```
+npm install --save @fortawesome/react-fontawesome
+```
 
 ### 62 - FINALIZAÇÃO DA APLICAÇÃO.
 - Ex-webapp-057
 
 - App Lista de Contatos - https://react-js-do-amador-ao-profissional.vercel.app/
 - Ex-webapp-058
+
+
+
+
+
+
+##
+
+
+
+##
+
+- By:  **Daniel Oliveira**
+
+  - `Instagram` - https://www.instagram.com/danieloliv3/
+  - `Facebook` - https://web.facebook.com/danielsapup3/
+  - `Twitter` - https://twitter.com/danielsapup3/
+  - `Linkedin` - https://www.linkedin.com/in/danielsapup3/
+
+  ##
